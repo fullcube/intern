@@ -43,12 +43,46 @@ function generateTasks(e) {
 }
 
 function createFeatureTemplate() {
-  var context    = '### Context\n---\n\n*Include background details for this story here*\n\n',
-      htd        = '### How To Demo\n---\n\n1. *Start your demo here*\n\n',
-      impDetails = '### Implementation Details\n---\n\n*Include technical details or considerations here*\n\n',
-      uxDetails  = '### Design/UX Details\n---\n\n*Include design details or considerations here*\n\n';
+  return (function() {/*# Problem / Motivation
+Including a detailed problem statement as part of your user stories has several benefits:
+ - They ensure that the business requirements are understood.
+ - They provide detail to the development team to enable them to think through the work that may need to be done.
 
-  return context + htd + impDetails + uxDetails;
+
+# Acceptance Criteria
+Including acceptance criteria as part of your user stories has several benefits:
+ - They get the team to think through how a feature or piece of functionality will work from the user’s perspective.
+ - They remove ambiguity from requirements.
+ - They form the tests that will confirm that a feature or piece of functionality is working and complete.
+
+
+# Proposed Solution / Technical Concept
+Providing a high level technical concept as part of your user stories has several benefits:
+ - They get the team to think through how a feature or piece of functionality may be implemented at a technical level.
+ - They ensure that any developer that picks up the story has a good starting point.
+ - They provide relevant pointers, references, code snippets and promote knowledge transfer throughout the team.
+
+---------------
+
+### Sniff Test
+Is this story well defined?
+
+- **Independent** - Can the story stand alone by itself ?
+- **Negotiable** - Can this story be changed or removed without impact to everything else?
+- **Valuable** - Does this story have value to the end user?
+- **Estimable** - Can you estimate the size of the story?
+- **Small** -Is it small enough?
+- **Testable** - Can this story be tested and verified?
+
+Is this story ready to be worked on?
+
+ - **[ ? ]** problem statement
+ - **[ ? ]** acceptance criteria
+ - **[ ? ]** technical concept
+ - **[ ? ]** tags / labels
+ - **[ ? ]** task list
+ - **[ ? ]** estimate
+*/}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1];
 }
 
 function createBugTemplate() {
