@@ -4,9 +4,9 @@ Chrome Extension for Pivotal Tracker workflow optimization
 ### Installation
 -----
 
-1. `git clone git@github.com:mattcoker/intern.git` to the directory of your choice
+1. `git clone git@github.com:fullcube/intern.git` to the directory of your choice
 1. Go to the Chrome Extensions page at `chrome://extensions/`
-1. Enable the `Developer Mode checkbox
+1. Enable the `Developer Mode` checkbox
 1. Click `Load Unpacked Extension`
 1. Select the appropriate folder
 
